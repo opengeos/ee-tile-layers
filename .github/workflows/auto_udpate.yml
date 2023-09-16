@@ -3,6 +3,12 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "25 3 * * *" # https://crontab.guru/
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
