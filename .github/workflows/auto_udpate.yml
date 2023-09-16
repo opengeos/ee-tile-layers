@@ -1,4 +1,4 @@
-name: maxar_catalog_update
+name: Auto update
 on:
   workflow_dispatch:
   schedule:
