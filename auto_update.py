@@ -1,4 +1,5 @@
 import time
+import ee
 import geemap
 import pandas as pd
 from geemap.ee_tile_layers import _get_tile_url_format, _validate_palette
