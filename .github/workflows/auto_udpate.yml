@@ -30,6 +30,8 @@ jobs:
       - name: execute python script
         run: |
           python auto_update.py
+        env:
+          EARTHENGINE_TOKEN: ${{ secrets.EARTHENGINE_TOKEN }}
       - name: file_check
         run: ls -l -a
       - name: commit files
