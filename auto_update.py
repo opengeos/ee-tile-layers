@@ -4,7 +4,7 @@ import geemap
 import pandas as pd
 from geemap.ee_tile_layers import _get_tile_url_format, _validate_palette
 
-geemap.ee_initialize(service_account=True)
+geemap.ee_initialize()
 
 df = pd.read_csv("datasets.tsv", sep="\t")
 
