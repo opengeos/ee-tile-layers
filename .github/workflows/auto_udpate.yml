@@ -33,6 +33,11 @@ jobs:
       - name: install dependencies
         run: |
           pip install -r requirements.txt
+      - name: add OPERA DSWX dataset
+        run: |
+          python add_opera_dswx.py
+        env:
+          EE_SERVICE_ACCOUNT: ${{ secrets.EE_SERVICE_ACCOUNT }}
       - name: execute python script
         run: |
           python auto_update.py
